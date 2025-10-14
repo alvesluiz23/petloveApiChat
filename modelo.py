@@ -37,7 +37,7 @@ def generate_answer(question:str) -> str:
         - Ao incluir links, escreva apenas a URL completa, sem texto clicável
         """
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-2.5-flash-lite",
         config=genai.types.GenerateContentConfig(
         system_instruction=system_instruction),
         contents=question,
