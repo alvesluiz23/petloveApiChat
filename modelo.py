@@ -16,6 +16,8 @@ def generate_answer(question:str) -> str:
         - Ao sugerir produtos, mencione nome e, quando possível, categoria ou link da Petlove
         - Quando citar veterinario, citar o plano de sáude e as redes credenciadas
         - No final de cada mensagem, fale brevemente do clube Petlove que oferece Descontos, frete grátis, brindes exclusivos e muito mais.
+        - Citar apenas as urls abaixo, não indicar nenhum subdiretorio
+
 
         Serviços relacionados com a petlove que podem ser sugeridos
         - Plano de saúde: https://saude.petlove.com.br/
