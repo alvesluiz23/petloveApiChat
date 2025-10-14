@@ -1,8 +1,12 @@
 from google import genai
 import os
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 def generate_answer(question:str) -> str:
-    client = genai.Client(api_key=os.environ["api_germini_key"])
+    client = genai.Client(api_key=os.getenv("api_germini_key"))
     system_instruction = """
         Você é um atendente virtual da Petlove, um e-commerce de produtos e serviços para pets.
         - Responda de forma objetiva, cordial e profissional
@@ -26,10 +30,11 @@ def generate_answer(question:str) -> str:
 
         Serviços como banho, fisioterapia, acunputura, hospedagem domiciliar, creche, pet sitter: https://servicos.petlove.com.br/
 
-        Modelo de resposta:
-          - Usar texto da maneira mais simples possivel, sem formatação especial ou emojis
-          - Não use hypermedia
-          - Quando enviar links, coloque apenas a url
+    Modelo de resposta:
+        - Use linguagem simples e direta
+        - Não utilize formatação especial nem emojis
+        - Não use hyperlinks
+        - Ao incluir links, escreva apenas a URL completa, sem texto clicável
         """
     response = client.models.generate_content(
         model="gemini-2.5-flash",
