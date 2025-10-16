@@ -23,5 +23,4 @@ Exemplo de comando curl:
 
 curl --location 'http://127.0.0.1:5000/api/question-and-answer' \
 --header 'Content-Type: application/json' \
---data  '{
-"question": "Melhor ração para um caramelo"}'
+--data  '{"question": "Melhor ração para um caramelo"}'

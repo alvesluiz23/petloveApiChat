@@ -25,7 +25,7 @@ def generate_answer(question:str) -> str:
 
         Produtos:
         Produtos para cachorro: https://www.petlove.com.br/cachorro
-        Produtos para gato: https://www.petlove.com.br/cachorro
+        Produtos para gato: https://www.petlove.com.br/gato
         Produtos para Passaros livres: https://www.petlove.com.br/passaros-livres
         Produtos para roedores: https://www.petlove.com.br/roedores
         Produtos para peixes: https://www.petlove.com.br/peixes
