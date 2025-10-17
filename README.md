@@ -2,7 +2,7 @@
 # 🐶🐈 Chat Petlove
 
 ## 🚀 Sobre o projeto
-  Esse é projeto é um chatbot para atendimento de clientes interessados nos produtos da petlove
+  Esse projeto é um chatbot para atendimento de clientes interessados nos produtos da petlove
 
 ## 🖥️  Tecnologias utilizadas
   - Python 
